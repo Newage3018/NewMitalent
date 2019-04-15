@@ -420,6 +420,12 @@ header .search-controls {
   margin-right: 66px;
 }
 
+header .search-controls .button-close i {
+  width: 14px;
+  height: 14px;
+  margin-left: 33px;
+}
+
 .first-screen {
   height: 1080px;
   position: relative;
@@ -567,5 +573,33 @@ header .search-controls {
   font-size: 14px;
   letter-spacing: 2.8px;
   text-transform: uppercase;
+}
+
+.second-screen {
+  height: 1188px;
+  position: relative;
+  padding: 120px;
+}
+
+.second-screen .main-profile {
+  background: #afc0c0;
+  position: relative;
+}
+
+.second-screen .slider-left {
+  width: 649px;
+  height: 948px;
+  background: #051d1d;
+}
+
+.second-screen .profile-center {
+  width: 991px;
+  height: 948px;
+  background: #d6dddd;
+}
+
+.second-screen .profile-menu {
+  left: 166px;
+  top: 91px;
 }
 /*# sourceMappingURL=site.css.map */

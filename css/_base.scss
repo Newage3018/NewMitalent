@@ -19,7 +19,9 @@
     background-color: transparent;
     outline: unset;
     padding: 0;
+    
 }
+
 
 header {
     right: 0;
@@ -47,5 +49,13 @@ header {
 
     .search-controls {
         margin-right: 66px;
+
+        .button-close i{
+            // margin-left: 36px;
+            width: 14px;
+            height:14px;
+            margin-left: 33px;
+        }
     }
+    
 }
