@@ -159,9 +159,8 @@
     
 
     .profile-left{
-        flex:1;
+        flex:1 1;
         position: relative;
-        // max-width: 649px;
         height: 100%;
         background: #051d1d;
         opacity: 0.5;
@@ -169,21 +168,34 @@
     }
 
     .profile-right{
-        flex:1 1 40%;
+        flex:1 1;
         position:relative;
-        // position: absolute;
-        // top:0;
-        // left:840;
-        
-        // width:480px;
+        left:50%;
         height:100%;
         flex-direction: column;
         justify-content: space-around;
         background: #d6dddd;  
     }
 
+    .profile-center{
+        flex:1 1;
+    }
+
     .icon-bar{
+        position: relative;
+        top:50%;
         flex:1;
+    }
+
+    .icons-list{
+        list-style: none;
+        flex-direction: column;
+        justify-content: space-around;
+
+        // position:absolute;
+        // top:50%;
+        // right:0;
+
     }
     .profile-menu-list{
         list-style: none;
@@ -209,6 +221,7 @@
     .profile-text{
         flex:1;
     }
+
 
 }
 
