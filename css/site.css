@@ -5,6 +5,11 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+* {
+  padding: 0;
+  margin: 0;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -567,8 +572,14 @@ header .search-controls .button-close i {
   position: absolute;
   left: 0;
   bottom: 0;
-  line-height: 90px;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #87bbbc;
   font-size: 14px;
   letter-spacing: 2.8px;
@@ -578,28 +589,78 @@ header .search-controls .button-close i {
 .second-screen {
   height: 1188px;
   position: relative;
+  background: #e0f8f8;
   padding: 120px;
 }
 
 .second-screen .main-profile {
-  background: #afc0c0;
   position: relative;
+  background: #afc0c0;
 }
 
-.second-screen .slider-left {
-  width: 649px;
-  height: 948px;
+.second-screen .profile-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  position: relative;
+  height: 100%;
   background: #051d1d;
+  opacity: 0.5;
 }
 
-.second-screen .profile-center {
-  width: 991px;
-  height: 948px;
+.second-screen .profile-right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  position: relative;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background: #d6dddd;
 }
 
-.second-screen .profile-menu {
-  left: 166px;
-  top: 91px;
+.second-screen .icon-bar {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.second-screen .profile-menu-list {
+  list-style: none;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: #d6dddd;
+}
+
+.second-screen .profile-menu-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  line-height: 9px;
+}
+
+.second-screen .profile-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.second-screen .profile-text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.third-screen {
+  height: 200px;
+  position: relative;
+  background: #2b9696;
+  padding: 120px;
 }
 /*# sourceMappingURL=site.css.map */
