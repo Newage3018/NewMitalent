@@ -596,6 +596,9 @@ header .search-controls .button-close i {
 .second-screen .main-profile {
   position: relative;
   background: #afc0c0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .second-screen .profile-left {
