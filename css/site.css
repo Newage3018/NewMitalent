@@ -367,6 +367,10 @@ template {
   font-weight: 500;
 }
 
+body {
+  max-width: 1920px;
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,8 +435,13 @@ header .search-controls .button-close i {
   margin-left: 33px;
 }
 
+span:before {
+  content: '';
+  display: block;
+}
+
 .first-screen {
-  height: 1080px;
+  height: 100vh;
   position: relative;
 }
 
@@ -446,15 +455,18 @@ header .search-controls .button-close i {
 }
 
 .first-screen .main-content {
-  width: 1800px;
-  height: 810px;
+  width: 94vw;
+  max-width: 1800px;
+  height: 75vh;
+  max-height: 810px;
   position: absolute;
   left: 0;
   bottom: 0;
 }
 
 .first-screen .slider-meta {
-  width: 480px;
+  width: 25vw;
+  max-width: 480px;
   height: 100%;
   position: relative;
 }
@@ -470,7 +482,7 @@ header .search-controls .button-close i {
 }
 
 .first-screen .person-name {
-  font-size: 101px;
+  font-size: 10.5vh;
   letter-spacing: 2px;
   margin: 0;
 }
@@ -587,61 +599,81 @@ header .search-controls .button-close i {
 }
 
 .second-screen {
+  width: 100%;
   height: 1188px;
   position: relative;
-  background: #e0f8f8;
-  padding: 120px;
 }
 
-.second-screen .main-profile {
+.second-screen .main-container {
+  height: 948px;
   position: relative;
-  background: #afc0c0;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  background: #ecb9a5;
+  padding: 120px;
 }
 
 .second-screen .profile-left {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
   height: 100%;
-  background: #051d1d;
-  opacity: 0.5;
+}
+
+.second-screen .profile-slider {
+  width: 649px;
+  height: 100%;
+  position: relative;
+  background: #e2e8e8;
 }
 
 .second-screen .profile-right {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
+      -ms-flex: 1;
+          flex: 1;
   position: relative;
-  left: 50%;
   height: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: #b1ecc3;
+  opacity: 0.5;
+}
+
+.second-screen .profile-center {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 90%;
+          flex: 0 0 90%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background: #d6dddd;
-}
-
-.second-screen .profile-center {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1;
-          flex: 1 1;
+  position: relative;
+  height: 100%;
+  background: #eed6d6;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .second-screen .icon-bar {
   position: relative;
-  top: 50%;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  background: #4b4b29;
 }
 
 .second-screen .icons-list {
+  position: absolute;
+  top: 50%;
+  right: -2%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   list-style: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -649,14 +681,26 @@ header .search-controls .button-close i {
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  line-height: 16px;
+  height: 180px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .second-screen .profile-menu-list {
+  padding-top: 91px;
+  width: 58%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%;
   list-style: none;
-  position: relative;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  position: absolute;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background: #d6dddd;
 }
 
@@ -667,16 +711,34 @@ header .search-controls .button-close i {
   line-height: 9px;
 }
 
+.second-screen .profile-menu-item:first-child {
+  padding-bottom: 16px;
+  padding-left: 16px;
+  border-bottom: 2px solid #1a1a1d;
+}
+
 .second-screen .profile-title {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 23%;
+}
+
+.second-screen .profile-description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
 }
 
 .second-screen .profile-text {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  max-width: 20%;
 }
 
 .third-screen {

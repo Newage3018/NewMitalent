@@ -1,3 +1,6 @@
+body{
+    max-width: 1920px;
+}
 .flex-container {
     display: flex;
     align-items: center;
@@ -58,4 +61,13 @@ header {
         }
     }
     
+}
+
+
+span:before{
+    content:'';
+    display: block;
+
+
+
 }
