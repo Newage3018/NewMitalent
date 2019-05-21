@@ -34,3 +34,19 @@
 // alert(counter());
 // alert(counter());
 // alert(counter());
+function v1sum(paramA,paramB) {
+    return paramA+paramB;
+  }
+  console.log(typeof(v1sum));
+  const textFunction1 = ""+v1sum; //получил текст функции1 //это строковое значение!
+  console.log(typeof(textFunction1));
+  a=1;
+  b=2;
+  console.log(textFunction1);
+  console.log("v1sum("+a+","+b+")=", v1sum(a,b));
+  //
+  const nameFunction2 = "v2sum";
+  const textFunction2 = textFunction1.replace("v1sum", "v2sum"); //получил текст функции2
+  console.log(textFunction2);
+  eval(textFunction2);
+  console.log("v2sum("+a+","+b+")=", v2sum(a,b));
