@@ -722,6 +722,12 @@ span:before {
   max-width: 58.17%;
 }
 
+.second-screen .profile-star {
+  font-size: 16px;
+  margin-top: 4%;
+  max-width: 21%;
+}
+
 .second-screen .profile-text {
   margin-top: 4%;
   max-width: 58.17%;
