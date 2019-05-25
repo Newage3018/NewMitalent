@@ -446,7 +446,7 @@ span:before {
 }
 
 .first-screen {
-  height: 100vh;
+  height: 1080px;
   position: relative;
 }
 
@@ -606,13 +606,12 @@ span:before {
 .second-screen {
   height: 1188px;
   position: relative;
+  padding: 120px;
 }
 
 .second-screen .main-container {
-  height: 948px;
+  height: 100%;
   position: relative;
-  background: #ecb9a5;
-  padding: 120px;
 }
 
 .second-screen .profile-left {
@@ -622,17 +621,31 @@ span:before {
   position: relative;
   height: 100%;
   margin-right: 7.15%;
-  background: #6369b4;
+  background: #e2e8e8;
   opacity: 0.5;
 }
 
 .second-screen .profile-slider {
-  width: 102px;
-  height: 12px;
+  width: 84px;
+  height: 14px;
   position: absolute;
-  background: #a0b36c;
-  left: 280px;
-  bottom: 30px;
+  left: 43%;
+  bottom: 3.48%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.second-screen .dot-small {
+  color: #ffffff;
+  background: #ffffff;
+  font-size: 6px;
+}
+
+.second-screen .dot-big {
+  color: #ffffff;
+  background: #ffffff;
+  font-size: 12px;
 }
 
 .second-screen .profile-right {
@@ -647,7 +660,6 @@ span:before {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  background: #b1ecc3;
   opacity: 0.5;
 }
 
@@ -657,7 +669,15 @@ span:before {
           flex: 0 0 90%;
   position: relative;
   max-height: 100%;
-  background: #eed6d6;
+}
+
+.second-screen .profile-hr {
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  top: 116px;
+  left: -26px;
+  border-bottom: 2px solid black;
 }
 
 .second-screen .icon-bar {
@@ -669,7 +689,6 @@ span:before {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  background: #4b4b29;
 }
 
 .second-screen .icons-list {
@@ -699,7 +718,6 @@ span:before {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: #d6dddd;
 }
 
 .second-screen .profile-menu-item {
@@ -747,7 +765,6 @@ span:before {
 .third-screen {
   width: 100%;
   height: 1080px;
-  background: #2b9696;
   padding-left: 120px;
   padding-right: 120px;
   -webkit-box-align: stretch;
@@ -759,7 +776,6 @@ span:before {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
-  background: #a19e75;
   padding-left: 120px;
   padding-right: 170px;
   padding-top: 185px;
@@ -779,10 +795,135 @@ span:before {
   height: 49px;
 }
 
+.third-screen .left-first-block {
+  margin-top: 80px;
+  width: 620px;
+  height: 139px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.third-screen .left-second-block {
+  margin-top: 50px;
+  width: 620px;
+  height: 139px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.third-screen .first-one {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 35%;
+          flex: 1 1 35%;
+  background: #e2e8e8;
+  overflow: auto;
+}
+
+.third-screen .first-two {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 65%;
+          flex: 1 1 65%;
+}
+
+.third-screen .first-two-one {
+  margin-left: 42px;
+  height: 100%;
+}
+
+.third-screen .block-text {
+  line-height: 36px;
+  font-size: 24px;
+  color: #1a1a1d;
+}
+
+.third-screen .block-date {
+  line-height: 40px;
+  font-size: 16px;
+  color: #77777e;
+  margin-top: 36px;
+}
+
+.third-screen .explorer {
+  margin-top: 63px;
+}
+
+.third-screen .left-explorer {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 2.8px;
+}
+
+.third-screen .arrow {
+  margin-left: 22px;
+}
+
+.third-screen .for-play {
+  position: relative;
+  background: #b4d3d3;
+  height: 100%;
+}
+
+.third-screen .play {
+  position: absolute;
+  height: 35px;
+  width: 28px;
+  top: 53px;
+  left: 95px;
+  font-size: 34px;
+}
+
+.third-screen .play-active {
+  color: #87bbbc;
+}
+
 .third-screen .third-right {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
-  background: #b36cb3;
+  background: #e2e8e8;
+}
+
+.fourth-screen {
+  height: 1146px;
+  position: relative;
+}
+
+.fourth-head {
+  margin-left: 242px;
+  margin-right: 253px;
+  background: red;
+  height: 100px;
+}
+
+.head-title {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  font-size: 60px;
+  line-height: 79px;
+  color: #1a1a1d;
+  background: yellow;
+}
+
+.head-text {
+  display: inline-block;
+  margin-left: 441px;
+  width: 50%;
+  height: 100%;
+  background: #5e305e;
+}
+
+.set-hr {
+  border-bottom: 2px solid black;
+  width: 140px;
+  height: 49px;
 }
 /*# sourceMappingURL=site.css.map */
