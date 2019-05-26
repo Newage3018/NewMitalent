@@ -139,8 +139,6 @@
         display:flex;
         justify-content: space-around;
         align-items: center;
-        // line-height: 90px;
-        // text-align: center;
         color: #87bbbc;
         font-size: 14px;
         letter-spacing: 2.8px;
@@ -307,6 +305,7 @@
     height: 1080px;
     padding-left: 120px;
     padding-right: 120px;
+    padding-bottom: 120px;
     align-items: stretch;
 
     
@@ -431,7 +430,7 @@
 .fourth-head{
     margin-left:242px;
     margin-right: 253px;
-    background: red;
+    // background: red;
     height: 100px;
     // justify-content: flex-start;
     // align-items: stretch;
@@ -440,24 +439,34 @@
 
 .head-title{
     position: relative;
+    float: left;
     width:30%;
     height: 100%;
     // display: inline;
     font-size: 60px;
     line-height: 79px;
     color:#1a1a1d;
-    background: yellow;
+    // background: yellow;
 
 }
 
 .head-text{
-    display: inline-block;
-    margin-left: 441px;
-    width:50%;
+    // display: inline-block;
+    float: left;
+    margin-left: 30%;
+    width:40%;
     height: 100%;
-    background: rgb(94, 48, 94);
+    // background: rgb(94, 48, 94);
 
+}
 
+.two-string{
+    height:50%;
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.88;
+    color:#767679;
+    margin-bottom: 40px;
 
 }
 
@@ -467,6 +476,65 @@
     border-bottom: 2px solid black;
     width: 140px;
     height: 49px;
+}
 
+.fourth-gallery{
+    margin-top:128px;
+    margin-left: 120px;
+    margin-right: 120px;
+    height:42.76%;
+    // background: fuchsia;
+    justify-content: space-around;
+    align-items: stretch;
+    
 
 }
+.gallery-first{
+    flex:1;
+    background: #d3dcdc;
+   
+}
+
+.gallery-second{
+    flex:1;
+    background: #e2e8e8;
+}
+
+.gallery-third{
+    flex:1;
+    background: #030409;
+}
+
+.gallery-fourth{
+    flex:1;
+    background: #e2e8e8;
+}
+
+
+.mod{
+    background: #b4d3d3;
+
+}
+.under-slider{
+    width:100px;
+    height: 14px;
+    color: #b4d3d3;
+    // background: #b4d3d3;
+    justify-content: space-between;
+
+}
+.fourth-slider{
+    margin-left: 910px;
+    margin-top: 70px;
+    position: static;
+    
+
+}
+
+.fourth-footer{
+    margin-top: 120px;
+    height:117px;
+    border: 1px black;
+}
+
+
